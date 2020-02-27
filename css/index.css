@@ -176,6 +176,7 @@ nav {
 }
 
 a {
+    width: 100%;
     text-decoration: none;
     color: gray;
 }
@@ -268,4 +269,49 @@ li {
 
 h2 {
     font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    html {
+        width: 750px;
+        margin: 0 auto;
+    }
+    .head-img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 130%;
+    }
+    nav a {
+        padding: 20px;
+        width: 500px;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+    .reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head-img {
+        display: none;
+    }
+    .introthree {
+        align-content: center;
+    }
+    .fixone {
+        flex-direction: column;
+    }
+    .fixtwo {
+        flex-direction: column;
+    }
 }
