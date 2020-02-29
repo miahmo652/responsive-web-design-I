@@ -171,6 +171,7 @@ html {
 }
 
 nav {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -279,7 +280,7 @@ h2 {
 
 @media (max-width: 800px) {
     html {
-        width: 750px;
+        width: 650px;
         margin: 0 auto;
     }
     .head-img {
@@ -292,6 +293,8 @@ h2 {
         font-size: 130%;
     }
     nav a {
+        display: flex;
+        margin-left: 0%;
         padding: 20px;
         justify-content: space-around;
     }
