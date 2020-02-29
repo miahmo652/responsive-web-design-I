@@ -175,13 +175,19 @@ nav {
     justify-content: space-between;
 }
 
-a {
-    width: 100%;
+.reverse {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
     text-decoration: none;
     color: gray;
+    margin-left: 25%;
 }
 
 .introtwo {
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -279,9 +285,32 @@ h2 {
     .head-img {
         display: none;
     }
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        font-size: 130%;
+    }
+    nav a {
+        padding: 20px;
+        justify-content: space-around;
+    }
+    .fixone {
+        margin-left: 20px;
+    }
+    .fixtwo {
+        margin-left: 20px;
+    }
+    .end {
+        margin-left: 20px;
+    }
+    .middle-img {
+        margin-left: 20px;
+        width: 95%;
+    }
 }
 
-@media (max-width: 500px) {
+@media( max-width: 500px) {
     html {
         width: 100%;
         margin: 0 auto;
@@ -310,8 +339,13 @@ h2 {
     }
     .fixone {
         flex-direction: column;
+        margin-left: 20px;
     }
     .fixtwo {
         flex-direction: column;
+        margin-left: 20px;
+    }
+    .end {
+        margin-left: 20px;
     }
 }
